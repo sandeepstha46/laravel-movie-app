@@ -1,3 +1,3 @@
-## Laravel Breeze with Bootstrap
+## Laravel Movie APP API
 
-This repo consists of Breeze with Bootstrap 5.2
+Laravel Movie App is an api based movie listing site.
