@@ -47,7 +47,7 @@
                                 <h4 class="items__title">Upcoming 🍿</h4>
                                 <div class="upcoming__contents">
                                     <div class="upcoming__item">
-                                        <img src="/assets/img/posters/posters-j.jpg" alt="" />
+                                        <img src="{{ asset('img/posters/posters-j.jpg') }}" alt="" />
                                         <div class="upcoming__item--contents">
                                             <a href="">Star Wars | Airing on Sunday</a>
                                             <p class="upcoming__item--details">30 years after the defeat of Darth Vader
@@ -57,7 +57,7 @@
                                         </div>
                                     </div>
                                     <div class="upcoming__item">
-                                        <img src="/assets/img/posters/posters-k.jpg" alt="" />
+                                        <img src="{{ asset('img/posters/posters-k.jpg') }}" alt="" />
                                         <div class="upcoming__item--contents">
                                             <a href="">Star Wars | Airing on Sunday</a>
                                             <p class="upcoming__item--details">30 years after the defeat of Darth Vader
@@ -67,7 +67,7 @@
                                         </div>
                                     </div>
                                     <div class="upcoming__item">
-                                        <img src="/assets/img/posters/posters-l.jpg" alt="" />
+                                        <img src="{{ asset('img/posters/posters-l.jpg') }}" alt="" />
                                         <div class="upcoming__item--contents">
                                             <a href="">Star Wars | Airing on Sunday</a>
                                             <p class="upcoming__item--details">30 years after the defeat of Darth Vader
@@ -77,7 +77,7 @@
                                         </div>
                                     </div>
                                     <div class="upcoming__item">
-                                        <img src="/assets/img/posters/posters-m.jpg" alt="" />
+                                        <img src="{{ asset('img/posters/posters-m.jpg') }}" alt="" />
                                         <div class="upcoming__item--contents">
                                             <a href="">Star Wars | Airing on Sunday</a>
                                             <p class="upcoming__item--details">30 years after the defeat of Darth Vader

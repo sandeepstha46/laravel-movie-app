@@ -27,7 +27,7 @@
                     </div>
                     <div class="filter__quality">
                         <p class="filter__quality--title">Genre</p>
-                        <select name="" classform-select="genre">
+                        <select name="" class="form-select genre">
                             <option value="all">All</option>
                             <option value="action">Action</option>
                             <option value="adventure">Adventure</option>
@@ -36,7 +36,7 @@
                     </div>
                     <div class="filter__quality">
                         <p class="filter__quality--title">Rating</p>
-                        <select name="" class=form-select "rating">
+                        <select name="" class="form-select rating">
                             <option value="all">All</option>
                             <option value="9">9+</option>
                             <option value="8">8+</option>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="filter__quality">
                         <p class="filter__quality--title">Year</p>
-                        <select name="" clasform-select s="year">
+                        <select name="" class="form-select year">
                             <option value="all">All</option>
                             <option value="9">9+</option>
                             <option value="8">8+</option>
@@ -54,7 +54,7 @@
                     </div>
                     <div class="filter__quality">
                         <p class="filter__quality--title">Language</p>
-                        <select name="" class="lform-select anguage">
+                        <select name="" class="form-select language">
                             <option value="all">All</option>
                             <option value="english">English</option>
                             <option value="korean">Korean</option>
@@ -78,127 +78,127 @@
                 <div class="all">
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-k.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-k.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-l.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-l.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-m.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-m.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-n.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-n.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-o.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-o.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-p.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-p.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-q.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-q.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-r.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-r.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-s.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-s.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-t.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-t.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-k.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-k.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-l.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-l.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-m.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-m.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-n.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-n.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-o.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-o.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-p.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-p.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-q.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-q.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-r.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-r.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-s.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-s.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-t.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-t.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-l.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-l.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-m.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-m.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-n.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-n.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-o.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-o.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-p.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-p.jpg') }}" alt="" />
                         </a>
                     </div>
                 </div>

@@ -14,9 +14,11 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide poster">
                             <div class="poster__item">
-                                <img class="poster__background" src="/assets/img/posters/posters-a.jpg" alt="" />
+                                <img class="poster__background" src="{{ asset('img/posters/posters-a.jpg') }}"
+                                    alt="" />
                                 <div class="poster__content">
-                                    <img class="poster__image" src="/assets/img/posters/posters-a.jpg" alt="" />
+                                    <img class="poster__image" src="{{ asset('img/posters/posters-a.jpg') }}"
+                                        alt="" />
                                     <div class="poster__details">
                                         <p class="poster__title">Aquaman</p>
                                         <ul class="list-unstyled poster__tiny-info">
@@ -41,9 +43,9 @@
                             </div>
                         </div>
                         <div class="swiper-slide poster">
-                            <img class="poster__background" src="/assets/img/posters/posters-b.jpg" alt="" />
+                            <img class="poster__background" src="{{ asset('img/posters/posters-b.jpg') }}" alt="" />
                             <div class="poster__content">
-                                <img class="poster__image" src="/assets/img/posters/posters-b.jpg" alt="" />
+                                <img class="poster__image" src="{{ asset('img/posters/posters-b.jpg') }}" alt="" />
                                 <div class="poster__details">
                                     <p class="poster__title">Aquaman</p>
                                     <ul class="list-unstyled poster__tiny-info">
@@ -66,9 +68,9 @@
                             </div>
                         </div>
                         <div class="swiper-slide poster">
-                            <img class="poster__background" src="/assets/img/posters/posters-c.jpg" alt="" />
+                            <img class="poster__background" src="{{ asset('img/posters/posters-c.jpg') }}" alt="" />
                             <div class="poster__content">
-                                <img class="poster__image" src="/assets/img/posters/posters-c.jpg" alt="" />
+                                <img class="poster__image" src="{{ asset('img/posters/posters-c.jpg') }}" alt="" />
                                 <div class="poster__details">
                                     <p class="poster__title">Aquaman</p>
                                     <ul class="list-unstyled poster__tiny-info">
@@ -91,9 +93,9 @@
                             </div>
                         </div>
                         <div class="swiper-slide poster">
-                            <img class="poster__background" src="/assets/img/posters/posters-d.jpg" alt="" />
+                            <img class="poster__background" src="{{ asset('img/posters/posters-d.jpg') }}" alt="" />
                             <div class="poster__content">
-                                <img class="poster__image" src="/assets/img/posters/posters-d.jpg" alt="" />
+                                <img class="poster__image" src="{{ asset('img/posters/posters-d.jpg') }}" alt="" />
                                 <div class="poster__details">
                                     <p class="poster__title">Aquaman</p>
                                     <ul class="list-unstyled poster__tiny-info">
@@ -128,32 +130,38 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide poster__tr">
                             <a href="">
-                                <img class="poster__tr--image" src="/assets/img/posters/posters-l.jpg" alt="" />
+                                <img class="poster__tr--image" src="{{ asset('img/posters/posters-l.jpg') }}"
+                                    alt="" />
                             </a>
                         </div>
                         <div class="swiper-slide poster__tr">
                             <a href="">
-                                <img class="poster__tr--image" src="/assets/img/posters/posters-m.jpg" alt="" />
+                                <img class="poster__tr--image" src="{{ asset('img/posters/posters-m.jpg') }}"
+                                    alt="" />
                             </a>
                         </div>
                         <div class="swiper-slide poster__tr">
                             <a href="">
-                                <img class="poster__tr--image" src="/assets/img/posters/posters-n.jpg" alt="" />
+                                <img class="poster__tr--image" src="{{ asset('img/posters/posters-n.jpg') }}"
+                                    alt="" />
                             </a>
                         </div>
                         <div class="swiper-slide poster__tr">
                             <a href="">
-                                <img class="poster__tr--image" src="/assets/img/posters/posters-o.jpg" alt="" />
+                                <img class="poster__tr--image" src="{{ asset('img/posters/posters-o.jpg') }}"
+                                    alt="" />
                             </a>
                         </div>
                         <div class="swiper-slide poster__tr">
                             <a href="">
-                                <img class="poster__tr--image" src="/assets/img/posters/posters-p.jpg" alt="" />
+                                <img class="poster__tr--image" src="{{ asset('img/posters/posters-p.jpg') }}"
+                                    alt="" />
                             </a>
                         </div>
                         <div class="swiper-slide poster__tr">
                             <a href="">
-                                <img class="poster__tr--image" src="/assets/img/posters/posters-q.jpg" alt="" />
+                                <img class="poster__tr--image" src="{{ asset('img/posters/posters-q.jpg') }}"
+                                    alt="" />
                             </a>
                         </div>
                     </div>
@@ -167,52 +175,52 @@
                 <div class="all">
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-k.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-k.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-l.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-l.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-m.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-m.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-n.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-n.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-o.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-o.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-p.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-p.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-q.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-q.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-r.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-r.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-s.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-s.jpg') }}" alt="" />
                         </a>
                     </div>
                     <div class="all__item">
                         <a href="">
-                            <img src="/assets/img/posters/posters-t.jpg" alt="" />
+                            <img src="{{ asset('img/posters/posters-t.jpg') }}" alt="" />
                         </a>
                     </div>
                 </div>

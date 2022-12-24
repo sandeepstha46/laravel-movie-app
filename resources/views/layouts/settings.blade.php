@@ -9,7 +9,7 @@
         <form action="">
             <div class="profile">
                 <div class="profile__image">
-                    <img src="/assets/img/profile.png" alt="" />
+                    <img src="{{ asset('img/profile.png') }}" alt="" />
                     <div class="edit__image">
                         <label class="pb-2" for="">Upload an Image</label>
                         <input type="file" name="" id="" />
@@ -40,8 +40,8 @@
                         <div class="profile__content">
                             <div class="profile__content--inputs input-email">
                                 <label class="pb-2" for="password">Password</label>
-                                <input type="password" name="password" class="auth__input password__type" placeholder="●●●●●●●●"
-                                    required />
+                                <input type="password" name="password" class="auth__input password__type"
+                                    placeholder="●●●●●●●●" required />
                             </div>
                         </div>
                     </div>
