@@ -61,7 +61,7 @@
      </div>
      <div class="sidebar__footer">
          <div class="sidebar__footer--content">
-             <img src="/assets/img/profile.png" alt="" />
+             <img src="{{ asset('img/profile.png') }}" alt="" />
              <div class="user__detail">
                  <p class="user__detail--name">Login</p>
                  <p class="user__detail--email">login@email.com</p>
