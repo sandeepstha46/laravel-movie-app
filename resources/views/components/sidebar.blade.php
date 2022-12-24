@@ -14,19 +14,19 @@
                      </a>
                  </li>
                  <li class="menu">
-                     <a href="/discovery.html">
+                     <a href="{{ route('discovery') }}">
                          <i class="bi bi-folder"></i>
                          <span>Discovery</span>
                      </a>
                  </li>
                  <li class="menu">
-                     <a href="/trending.html">
+                     <a href="{{ route('trending') }}">
                          <i class="bi bi-fire"></i>
                          <span>Trending</span>
                      </a>
                  </li>
                  <li class="menu">
-                     <a href="/top-rated.html">
+                     <a href="{{ route('top-rated') }}">
                          <i class="bi bi-hand-thumbs-up"></i>
                          <span>Top Rated</span>
                      </a>
@@ -39,19 +39,19 @@
          <div class="sidebar__content sidebar__content--second">
              <ul class="list-unstyled sidebar__content--list">
                  <li>
-                     <a href="/movies.html">
+                     <a href="{{ route('movies') }}">
                          <i class="bi bi-camera-reels"></i>
                          <span>Movies</span>
                      </a>
                  </li>
                  <li>
-                     <a href="/series.html">
+                     <a href="{{ route('series') }}">
                          <i class="bi bi-fast-forward-circle"></i>
                          <span>Series</span>
                      </a>
                  </li>
                  <li>
-                     <a href="/settings.html">
+                     <a href="{{ route('settings') }}">
                          <i class="bi bi-gear"></i>
                          <span>Settings</span>
                      </a>

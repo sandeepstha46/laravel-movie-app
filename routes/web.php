@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +16,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('layouts.home');
+});
+
+
+Route::group([], function(){
+    Route::get('/', [PageController::class, 'home'])->name('home');
+    Route::get('/discovery', [PageController::class, 'discovery'])->name('discovery');
+    Route::get('/trending', [PageController::class, 'trending'])->name('trending');
+    Route::get('/top-rated', [PageController::class, 'toprated'])->name('top-rated');
+    Route::get('/movies', [PageController::class, 'movies'])->name('movies');
+    Route::get('/series', [PageController::class, 'series'])->name('series');
+    Route::get('/settings', [PageController::class, 'settings'])->name('settings');
 });
 
 Route::get('/dashboard', function () {
