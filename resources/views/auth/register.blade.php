@@ -1,61 +1,36 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo width="82" />
-            </a>
-        </x-slot>
-
-        <div class="card-body">
-            <!-- Validation Errors -->
-            <x-auth-validation-errors class="mb-4" :errors="$errors" />
-
-            <form method="POST" action="{{ route('register') }}">
-                @csrf
-
-                <!-- Name -->
-                <div class="mb-3">
-                    <x-label for="name" :value="__('Name')" />
-
-                    <x-input id="name" type="text" name="name" :value="old('name')" required autofocus />
-                </div>
-
-                <!-- Email Address -->
-                <div class="mb-3">
-                    <x-label for="email" :value="__('Email')" />
-
-                    <x-input id="email" type="email" name="email" :value="old('email')" required />
-                </div>
-
-                <!-- Password -->
-                <div class="mb-3">
-                    <x-label for="password" :value="__('Password')" />
-
-                    <x-input id="password" type="password"
-                                    name="password"
-                                    required autocomplete="new-password" />
-                </div>
-
-                <!-- Confirm Password -->
-                <div class="mb-3">
-                    <x-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                    <x-input id="password_confirmation" type="password"
-                                    name="password_confirmation" required />
-                </div>
-
-                <div class="mb-0">
-                    <div class="d-flex justify-content-end align-items-baseline">
-                        <a class="text-muted me-3 text-decoration-none" href="{{ route('login') }}">
-                            {{ __('Already registered?') }}
-                        </a>
-
-                        <x-button>
-                            {{ __('Register') }}
-                        </x-button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </x-auth-card>
-</x-guest-layout>
+<div class="register">
+    <p class="authentication__type text-center">Register</p>
+    <div class="authentication__input">
+        <form method="POST" action="{{ route('register') }}">
+        @csrf
+            <div class="authentication__input--type authentication__name">
+                <!-- <span class="error-message">Please enter a valid name</span> -->
+                <input type="text" name="name" class="auth__input" placeholder="Jhon Doe" required />
+            </div>
+            <div class="authentication__input--type authentication__email">
+                <!-- <span class="error-message">Please enter a valid email</span> -->
+                <input type="email" name="email" class="auth__input" placeholder="jhondoe@domain.com"
+                    pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required />
+            </div>
+            <div class="authentication__input--type authentication__password">
+                <!-- <span class="error-message">Password must be atleast 8 characters</span> -->
+                <input type="password" name="password" class="auth__input password__type" placeholder="●●●●●●●●"
+                    required />
+                <i class="bi bi-eye-slash toggle__visibilty"></i>
+            </div>
+            <div class="authentication__input--type authentication__password">
+                <!-- <span class="error-message">Password must be atleast 8 characters</span> -->
+                <input type="password" name="confirm-password" class="auth__input password__type confirm-password"
+                    placeholder="●●●●●●●●" required />
+                <i class="bi bi-eye-slash toggle__visibilty"></i>
+            </div>
+            <div class="submit-button__login">
+                <button class="btn primary-button login__button" type="submit">Register</button>
+            </div>
+        </form>
+        <p class="no__account text-end">
+            Already have an account?
+            <span class="log-in" href="">Log in</span>
+        </p>
+    </div>
+</div>
