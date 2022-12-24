@@ -20,7 +20,7 @@
                         <div class="profile__content">
                             <div class="profile__content--inputs">
                                 <label class="pb-2" for="username">Username:</label>
-                                <input type="text" name="username" class="auth__input" value="jhondoe" required />
+                                <input type="text" name="username" class="auth__input" placeholder="jhondoe" required />
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                             <div class="profile__content--inputs">
                                 <label class="pb-2" for="email">Email:</label>
                                 <input type="email" name="email" class="auth__input"
-                                    pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" value="jhondoe@domain.com"
+                                    pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" placeholder="jhondoe@domain.com"
                                     required />
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                         <div class="profile__content">
                             <div class="profile__content--inputs input-email">
                                 <label class="pb-2" for="password">Password</label>
-                                <input type="password" name="password" class="auth__input password__type" value="●●●●●●●●"
+                                <input type="password" name="password" class="auth__input password__type" placeholder="●●●●●●●●"
                                     required />
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                             <div class="profile__content--inputs input-email">
                                 <label class="pb-2" for="email">Confirm Password</label>
                                 <input type="password" name="confirm-password"
-                                    class="auth__input password__type confirm-password" value="●●●●●●●●" required />
+                                    class="auth__input password__type confirm-password" placeholder="●●●●●●●●" required />
                             </div>
                         </div>
                     </div>
