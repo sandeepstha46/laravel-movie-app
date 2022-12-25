@@ -71,7 +71,7 @@
                  <img src="{{ asset('img/profile.png') }}" alt="" />
                  <div class="user__detail">
                      <p class="user__detail--name">Login</p>
-                     <p class="user__detail--email">login@email.com</p>
+                     <p class="user__detail--email"></p>
                  </div>
              @endif
          </div>
