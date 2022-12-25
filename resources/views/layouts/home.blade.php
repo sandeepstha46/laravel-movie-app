@@ -12,111 +12,50 @@
             <div class="items__title--content">
                 <div class="swiper trendingSlider">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide poster">
-                            <div class="poster__item">
-                                <img class="poster__background" src="{{ asset('img/posters/posters-a.jpg') }}"
-                                    alt="" />
-                                <div class="poster__content">
-                                    <img class="poster__image" src="{{ asset('img/posters/posters-a.jpg') }}"
+                        @foreach ($trendings as $trending)
+                            <div class="swiper-slide poster">
+                                <div class="poster__item">
+                                    <img class="poster__background"
+                                        src="{{ 'https://image.tmdb.org/t/p/original' . $trending['poster_path'] }}"
                                         alt="" />
-                                    <div class="poster__details">
-                                        <p class="poster__title">Aquaman</p>
-                                        <ul class="list-unstyled poster__tiny-info">
-                                            <li>2013</li>
-                                            <li>PG-13</li>
-                                            <li>1h 58min</li>
-                                        </ul>
-                                        <p class="poster__genre">
-                                            Genre:
-                                            <b>Action, Comedy</b>
-                                        </p>
-                                        <p class="poster__info">Born upon the shores of the
-                                            surface world, Arthur Curry (Jason Momoa) discovers
-                                            that he is only half human, with the other half...
-                                        </p>
-                                        <div class="poster__cta">
-                                            <a class="poster__cta--trailer" href="">Trailer</a>
-                                            <a class="poster__cta--movie" href="">Watched?</a>
+                                    <div class="poster__content">
+                                        <img class="poster__image"
+                                            src="{{ 'https://image.tmdb.org/t/p/original' . $trending['poster_path'] }}"
+                                            alt="" />
+                                        <div class="poster__details">
+                                            @if (isset($trending['title']))
+                                                <p class="poster__title">{{ Str::limit($trending['title'], 15, '...') }}</p>
+                                            @elseif(isset($trending['original_name']))
+                                                <p class="poster__title">{{ Str::limit($trending['name'], 15, '...') }}</p>
+                                            @else
+                                                <p class="poster__title">No Name</p>
+                                            @endif
+                                            <ul class="list-unstyled poster__tiny-info">
+                                                <li>{{ \Carbon\Carbon::parse($trending['adult'])->format('M d, Y') }}
+                                                </li>
+                                                <li>PG-13</li>
+                                                <li>1h 58min</li>
+                                            </ul>
+                                            <p class="poster__genre">
+                                                Genre:
+                                                @foreach ($trending['genre_ids'] as $genre)
+                                                    <b>{{ $genres->get($genre) }}@if (!$loop->last)
+                                                            ,
+                                                        @endif
+                                                    </b>
+                                                @endforeach
+                                            </p>
+                                            <p class="poster__info">{{ Str::limit($trending['overview'], '80', '...') }}
+                                            </p>
+                                            <div class="poster__cta">
+                                                <a class="poster__cta--trailer" href="">Trailer</a>
+                                                <a class="poster__cta--movie" href="">Watched?</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide poster">
-                            <img class="poster__background" src="{{ asset('img/posters/posters-b.jpg') }}" alt="" />
-                            <div class="poster__content">
-                                <img class="poster__image" src="{{ asset('img/posters/posters-b.jpg') }}" alt="" />
-                                <div class="poster__details">
-                                    <p class="poster__title">Aquaman</p>
-                                    <ul class="list-unstyled poster__tiny-info">
-                                        <li>2013</li>
-                                        <li>PG-13</li>
-                                        <li>1h 58min</li>
-                                    </ul>
-                                    <p class="poster__genre">
-                                        Genre:
-                                        <b>Action, Comedy</b>
-                                    </p>
-                                    <p class="poster__info">Born upon the shores of the surface
-                                        world, Arthur Curry (Jason Momoa) discovers that he is
-                                        only half human, with the other half...</p>
-                                    <div class="poster__cta">
-                                        <a class="poster__cta--trailer" href="">Trailer</a>
-                                        <a class="poster__cta--movie" href="">Watched?</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide poster">
-                            <img class="poster__background" src="{{ asset('img/posters/posters-c.jpg') }}" alt="" />
-                            <div class="poster__content">
-                                <img class="poster__image" src="{{ asset('img/posters/posters-c.jpg') }}" alt="" />
-                                <div class="poster__details">
-                                    <p class="poster__title">Aquaman</p>
-                                    <ul class="list-unstyled poster__tiny-info">
-                                        <li>2013</li>
-                                        <li>PG-13</li>
-                                        <li>1h 58min</li>
-                                    </ul>
-                                    <p class="poster__genre">
-                                        Genre:
-                                        <b>Action, Comedy</b>
-                                    </p>
-                                    <p class="poster__info">Born upon the shores of the surface
-                                        world, Arthur Curry (Jason Momoa) discovers that he is
-                                        only half human, with the other half...</p>
-                                    <div class="poster__cta">
-                                        <a class="poster__cta--trailer" href="">Trailer</a>
-                                        <a class="poster__cta--movie" href="">Watched?</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide poster">
-                            <img class="poster__background" src="{{ asset('img/posters/posters-d.jpg') }}" alt="" />
-                            <div class="poster__content">
-                                <img class="poster__image" src="{{ asset('img/posters/posters-d.jpg') }}" alt="" />
-                                <div class="poster__details">
-                                    <p class="poster__title">Aquaman</p>
-                                    <ul class="list-unstyled poster__tiny-info">
-                                        <li>2013</li>
-                                        <li>PG-13</li>
-                                        <li>1h 58min</li>
-                                    </ul>
-                                    <p class="poster__genre">
-                                        Genre:
-                                        <b>Action, Comedy</b>
-                                    </p>
-                                    <p class="poster__info">Born upon the shores of the surface
-                                        world, Arthur Curry (Jason Momoa) discovers that he is
-                                        only half human, with the other half...</p>
-                                    <div class="poster__cta">
-                                        <a class="poster__cta--trailer" href="">Trailer</a>
-                                        <a class="poster__cta--movie" href="">Watched?</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                     <div class="swiper-pagination trending-pagination"></div>
                 </div>
@@ -128,42 +67,14 @@
             <div class="items__title--content">
                 <div class="swiper topRated">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide poster__tr">
-                            <a href="">
-                                <img class="poster__tr--image" src="{{ asset('img/posters/posters-l.jpg') }}"
-                                    alt="" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide poster__tr">
-                            <a href="">
-                                <img class="poster__tr--image" src="{{ asset('img/posters/posters-m.jpg') }}"
-                                    alt="" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide poster__tr">
-                            <a href="">
-                                <img class="poster__tr--image" src="{{ asset('img/posters/posters-n.jpg') }}"
-                                    alt="" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide poster__tr">
-                            <a href="">
-                                <img class="poster__tr--image" src="{{ asset('img/posters/posters-o.jpg') }}"
-                                    alt="" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide poster__tr">
-                            <a href="">
-                                <img class="poster__tr--image" src="{{ asset('img/posters/posters-p.jpg') }}"
-                                    alt="" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide poster__tr">
-                            <a href="">
-                                <img class="poster__tr--image" src="{{ asset('img/posters/posters-q.jpg') }}"
-                                    alt="" />
-                            </a>
-                        </div>
+                        @foreach ($topRateds as $topRated)
+                            <div class="swiper-slide poster__tr">
+                                <a href="">
+                                    <img class="poster__tr--image" src="{{ 'https://image.tmdb.org/t/p/original' . $topRated['poster_path'] }}"
+                                        alt="" />
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
