@@ -70,7 +70,8 @@
                         @foreach ($topRateds as $topRated)
                             <div class="swiper-slide poster__tr">
                                 <a href="">
-                                    <img class="poster__tr--image" src="{{ 'https://image.tmdb.org/t/p/original' . $topRated['poster_path'] }}"
+                                    <img class="poster__tr--image"
+                                        src="{{ 'https://image.tmdb.org/t/p/original' . $topRated['poster_path'] }}"
                                         alt="" />
                                 </a>
                             </div>
