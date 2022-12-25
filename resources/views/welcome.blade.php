@@ -30,8 +30,19 @@
                 <div class="authentication__close">
                     <i class="bi bi-x"></i>
                 </div>
-                @include('auth.login')
-                @include('auth.register')
+                @if (Auth::check())
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"
+                            type="submit">
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Logout
+                        </button>
+                    </form>
+                @else
+                    @include('auth.login')
+                    @include('auth.register')
+                @endif
             </div>
         </section>
         <div class="page-wrapper">

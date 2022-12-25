@@ -9,8 +9,7 @@
              @csrf
              <div class="authentication__input--type authentication__email">
                  <!-- <span class="error-message">Please enter a valid email</span> -->
-                 <input type="email" name="email" class="auth__input" placeholder="jhondoe@domain.com"
-                     pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required />
+                 <input type="email" name="email" class="auth__input" placeholder="jhondoe@domain.com" required />
              </div>
              <div class="authentication__input--type authentication__password">
                  <!-- <span class="error-message">Password must be atleast 8 characters</span> -->
@@ -19,9 +18,9 @@
                  <i class="bi bi-eye-slash toggle__visibilty"></i>
              </div>
              <div class="forgot__password text-end pt-1">
-                @if (Route::has('password.request'))
+                 @if (Route::has('password.request'))
                      <a href="{{ route('password.request') }}">Forgot Password?</a>
-                @endif
+                 @endif
              </div>
              <div class="submit-button__login">
                  <button class="btn primary-button login__button" type="submit">Login</button>

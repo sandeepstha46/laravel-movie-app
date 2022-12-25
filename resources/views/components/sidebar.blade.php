@@ -61,11 +61,19 @@
      </div>
      <div class="sidebar__footer">
          <div class="sidebar__footer--content">
-             <img src="{{ asset('img/profile.png') }}" alt="" />
-             <div class="user__detail">
-                 <p class="user__detail--name">Login</p>
-                 <p class="user__detail--email">login@email.com</p>
-             </div>
+             @if (Auth::check())
+                 <img src="{{ asset('img/profile.png') }}" alt="" />
+                 <div class="user__detail">
+                     <p class="user__detail--name">{{ Auth::user()->name }}</p>
+                     <p class="user__detail--email">{{ Auth::user()->email }}</p>
+                 </div>
+             @else
+                 <img src="{{ asset('img/profile.png') }}" alt="" />
+                 <div class="user__detail">
+                     <p class="user__detail--name">Login</p>
+                     <p class="user__detail--email">login@email.com</p>
+                 </div>
+             @endif
          </div>
      </div>
  </section>
