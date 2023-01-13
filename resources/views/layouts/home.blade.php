@@ -61,25 +61,6 @@
                 </div>
             </div>
         </div>
-        <!-- top rated -->
-        <div class="items__custom">
-            <h4 class="items__title" class="">Top Rated ✨</h4>
-            <div class="items__title--content">
-                <div class="swiper topRated">
-                    <div class="swiper-wrapper">
-                        @foreach ($topRateds as $topRated)
-                            <div class="swiper-slide poster__tr">
-                                <a href="">
-                                    <img class="poster__tr--image"
-                                        src="{{ 'https://image.tmdb.org/t/p/original' . $topRated['poster_path'] }}"
-                                        alt="" />
-                                </a>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- latest updates -->
         <div class="items__custom">
             <h4 class="items__title" class="">Latest Updates</h4>
