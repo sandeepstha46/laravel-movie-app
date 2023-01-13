@@ -12,13 +12,13 @@ class PageController extends Controller
         // Getting Trending
         $trendings =  Http::withToken(config('services.tmdb.token'))->get('https://api.themoviedb.org/3/trending/all/day')->json()['results'];
         // Top Rated
-        $topRateds  = Http::withToken(config('services.tmdb.token'))->get('https://api.themoviedb.org/3/movie/top_rated')->json()['results'];
+        // $topRateds  = Http::withToken(config('services.tmdb.token'))->get('https://api.themoviedb.org/3/movie/top_rated')->json()['results'];
         // Getting Genres
         $genreLists = Http::withToken(config('services.tmdb.token'))->get('https://api.themoviedb.org/3/genre/movie/list')->json()['genres'];
         $genres = collect($genreLists)->mapWithKeys(function ($genre) {
             return [$genre['id'] => $genre['name']];
         });
-        return view('layouts.home', compact('trendings', 'topRateds', 'genres'));
+        return view('layouts.home', compact('trendings', 'genres'));
     }
 
     public function discovery()
