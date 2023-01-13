@@ -8,14 +8,20 @@
          <form method="POST" action="{{ route('login') }}">
              @csrf
              <div class="authentication__input--type authentication__email">
-                 <!-- <span class="error-message">Please enter a valid email</span> -->
-                 <input type="email" name="email" class="auth__input" placeholder="jhondoe@domain.com" required />
+                 <input type="email" name="email" class="auth__input @error('email') is-invalid @enderror"
+                     placeholder="jhondoe@domain.com" required />
+                 @error('email')
+                     <span class="error-message">{{ $message }}</span>
+                 @enderror
              </div>
              <div class="authentication__input--type authentication__password">
-                 <!-- <span class="error-message">Password must be atleast 8 characters</span> -->
-                 <input type="password" name="password" class="auth__input password__type" placeholder="●●●●●●●●"
+                 <input type="password" name="password"
+                     class="auth__input @error('password') is-invalid @enderror password__type" placeholder="●●●●●●●●"
                      required />
                  <i class="bi bi-eye-slash toggle__visibilty"></i>
+                 @error('password')
+                     <span class="error-message">{{ $message }}</span>
+                 @enderror
              </div>
              <div class="forgot__password text-end pt-1">
                  @if (Route::has('password.request'))

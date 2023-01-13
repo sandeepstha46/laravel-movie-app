@@ -8,6 +8,8 @@
     <title>
         @yield('title')
     </title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap.min.css') }}" />
     <!-- Bootstrap Icons -->

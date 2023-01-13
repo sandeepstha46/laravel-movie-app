@@ -2,24 +2,32 @@
     <p class="authentication__type text-center">Register</p>
     <div class="authentication__input">
         <form method="POST" action="{{ route('register') }}">
-        @csrf
+            @csrf
             <div class="authentication__input--type authentication__name">
-                <!-- <span class="error-message">Please enter a valid name</span> -->
-                <input type="text" name="name" class="auth__input" placeholder="Jhon Doe" required />
+                @error('name')
+                <span class="error-message">{{ $message }}</span>
+                @enderror
+                <input type="text" name="name" class="auth__input @error('name') is-invalid @enderror" placeholder="Jhon Doe" required />
             </div>
             <div class="authentication__input--type authentication__email">
-                <!-- <span class="error-message">Please enter a valid email</span> -->
-                <input type="email" name="email" class="auth__input" placeholder="jhondoe@domain.com" required />
+                @error('email')
+                <span class="error-message">{{ $message }}</span>
+                @enderror
+                <input type="email" name="email" class="auth__input @error('name') is-invalid @enderror" placeholder="jhondoe@domain.com" required />
             </div>
             <div class="authentication__input--type authentication__password">
-                <!-- <span class="error-message">Password must be atleast 8 characters</span> -->
-                <input type="password" name="password" class="auth__input password__type" placeholder="●●●●●●●●"
+                @error('password')
+                <span class="error-message">{{ $message }}</span>
+                @enderror
+                <input type="password" name="password" class="auth__input @error('password') is-invalid @enderror password__type" placeholder="●●●●●●●●"
                     required />
                 <i class="bi bi-eye-slash toggle__visibilty"></i>
             </div>
             <div class="authentication__input--type authentication__password">
-                <!-- <span class="error-message">Password must be atleast 8 characters</span> -->
-                <input type="password" name="password_confirmation" class="auth__input password__type confirm-password"
+                @error('password_confirmation')
+                <span class="error-message">{{ $message }}</span>
+                @enderror
+                <input type="password" name="password_confirmation" class="auth__input @error('password_confirmation') is-invalid @enderror password__type confirm-password"
                     placeholder="●●●●●●●●" required />
                 <i class="bi bi-eye-slash toggle__visibilty"></i>
             </div>
